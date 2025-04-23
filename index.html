@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+    <style>
+        .carousel-indicators button{
+            width: 12px !important;
+            height: 12px !important;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body data-bs-theme="dark">
+
+  <!-- Modal -->
+
+  <!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Info Academy</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Course Purcharsed  <span class="text-success">Succesfully</span> 🎉🎉🎉
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Modal -->
+
+  <!-- Offcanvas -->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><span class="text-danger">Info Academy</span> Courses</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+
+        <div class="card">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">Javascript</li>
+            <li class="list-group-item">React</li>
+            <li class="list-group-item">Mango DB</li>
+            <li class="list-group-item">mySql</li>
+
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas -->
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./1.png" alt="" width="30px">
+            Info Academy
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Frontend</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Backend</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Designing</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"></li>
+                <a class="btn btn-danger" href="../../day3/bootstrapFormDesign/index.html">Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Navbar -->
+
+    <!-- Carousel -->
+
+    <div class="container">
+
+        <div id="carouselExampleAutoplaying" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner position-relative rounded-3">
+
+              <div class="carousel-item active">
+                <img src="./c1.avif" class="d-block w-100" alt="...">
+                <div class="carousel-content position-absolute top-50 start-50 translate-middle text-center text-light">
+                    <h1>Info <span class="text-danger">Academy</span></h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                      Courses List >>
+                    </a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./c1.avif" class="d-block w-100" alt="...">
+                <div class="carousel-content position-absolute top-50 start-50 translate-middle text-center text-light">
+                    <h1>Info <span class="text-danger">Academy</span></h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                      Courses List >>
+                    </a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./c1.avif" class="d-block w-100" alt="...">
+                <div class="carousel-content position-absolute top-50 start-50 translate-middle text-center text-light">
+                    <h1>Info <span class="text-danger">Academy</span></h1>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <a class="btn btn-danger" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                      Courses List >>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+
+
+    <!-- Carousel -->
+
+     <!-- courses card -->
+
+     <section class="container card-section my-5">
+        <h1 class="my-5 border-start border-5 border-danger ps-3">Courses 📖 :)</h1>
+        <div class="course-cards">
+
+          <div class="row">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+              <div class="card">
+                <img src="./courses-images/1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HTML, CSS Course</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p>$ 250</p>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                  </button>
+                  
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+              <div class="card">
+                <img src="./courses-images/2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Javascript Course</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p>$ 450</p>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+              <div class="card">
+                <img src="./courses-images/3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">React Course</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p>$ 60</p>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+              <div class="card" >
+                <img src="./courses-images/4.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mysql Course</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p>$ 950</p>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+              <div class="card">
+                <img src="./courses-images/5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Python Course</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p>$ 250</p>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+            <div class="card">
+              <img src="./courses-images/7.jpg_large" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Flutter Course</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p>$ 250</p>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Purchase
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+            <div class="card">
+              <img src="./courses-images/8.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Graphic Designing</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p>$ 250</p>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Purchase
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+
+              <div class="card">
+                <img src="./courses-images/6.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">JAVA Course</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p>$ 250</p>
+                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Purchase
+                  </button>
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+     </section>
+
+
+     <!-- courses card -->
+
+     <!-- FAQ -->
+
+     <div class="container my-5">
+
+      <h1 class="my-5 border-start border-5 border-danger ps-3">FAQ <span class="text-danger"> ?</span></h1>
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Placement Available ?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              How many Days course duration
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              If i discontinue refund is available ?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+
+     <!-- FAQ -->
+
+     <!-- Map section -->
+
+     <div class="container">
+      <h1>Our <span class="text-danger ">Location </span> 🗺️ </h1>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img src="./map.avif" alt="" class="img-fluid mt-5">
+        </div>
+        <div class="col-12 col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125178.70977508226!2d77.63299376810335!3d11.34678303729345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba96f46762f4671%3A0xd97da6e3d9c7f75e!2sErode%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1745388536596!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+     </div>
+
+
+     <!-- Map section -->
+
+     <!-- Footer -->
+
+     <footer class="fs-5 mt-5 border-top border-secondary pt-3 text-center">
+        <h1>Info <span class="text-danger">Academy</span></h1>
+        <p class="text-secondary">Created By Karvendhan ST ❤️</p>
+        <p class="text-secondary">© All Copyrights reservered</p>
+     </footer>
+
+     
+     <!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
